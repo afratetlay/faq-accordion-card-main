@@ -52,7 +52,7 @@ body {
     margin: 6rem auto;
     padding-right: 2rem;
     background-image: url("images/bg-pattern-desktop.svg");
-    background-size: cover;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: left center;
   }
@@ -60,5 +60,15 @@ body {
   .card__image,
   .card__text {
     flex: 1;
+  }
+
+  .card__image {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .card__image img {
+    transform: translateX(-4rem);
   }
 }
